@@ -1,0 +1,24 @@
+# downloaded third-party binaries (Brush, COLMAP) — large, fetched via INSTALL_WINDOWS.md
+tools/
+
+# inputs / working files (keep the folders, not the big media)
+data/*
+!data/.gitkeep
+output/*
+!output/.gitkeep
+frames/
+
+# the viewer keeps a demo splat (viewer/scene.ply) tracked; ignore the other formats
+viewer/scene.ksplat
+viewer/scene.splat
+
+# python
+__pycache__/
+*.pyc
+
+# os
+Thumbs.db
+.DS_Store
+
+# Brush/burn autotune cache (written at runtime)
+target/
